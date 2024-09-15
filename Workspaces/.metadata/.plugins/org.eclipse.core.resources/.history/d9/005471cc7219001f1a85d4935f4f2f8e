@@ -1,0 +1,46 @@
+package uas_praktik_oop_i;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Rio_Main {
+	static ArrayList<Rio_Item> listOfItems = new ArrayList<Rio_Item>();
+	static ArrayList<Rio_Pelanggan> listOfCustomers = new ArrayList<Rio_Pelanggan>();
+	static ArrayList<Rio_Order> listOfOrders = new ArrayList<Rio_Order>();
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		for(;;) {
+			System.out.println("=================================================");
+			System.out.println("              Wemen Marketing Agent              ");
+			System.out.println("=================================================");
+			System.out.println("1. Penambahan Media");
+			System.out.println("2. Penyewaan Media");
+			System.out.println("3. Check Employment / Rental");
+			System.out.println("4. Credits");
+			System.out.println("5. Exit");
+			System.out.println("=================================================");
+			System.out.print("Pilih Menu (1-5) : ");
+			int choice = input.nextInt();
+			switch (choice) {
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				System.out.println("Keluar program...");
+				input.close();
+			    System.exit(0);
+				break;
+			default:
+				System.out.println("Invalid");
+				break;
+			}
+		}
+	}
+
+}

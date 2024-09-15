@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Rio\CODING\Semester 4\OOP\.metadata\.plugins\org.eclipse.jdt.core
+2649075583.index
+386089995.index
+2744055631.index
+1865797976.index
+369418695.index

@@ -1,0 +1,9 @@
+1715568935051	Encapsulate field 'name'
+1715568944822	Encapsulate field 'hitPoint'
+1715568954233	Encapsulate field 'damage'
+1715568959121	Encapsulate field 'energy'
+1715569375333	Encapsulate field 'hitPoint'
+1715569383469	Encapsulate field 'damageReduction'
+1715569388831	Encapsulate field 'damageTaken'
+1715569392962	Encapsulate field 'report'
+1715569973188	Delete element

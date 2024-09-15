@@ -1,0 +1,15 @@
+package uas_praktik_oop_i;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Rio_Main {
+	static ArrayList<Rio_Item> listOfItems = new ArrayList<Rio_Item>();
+	static ArrayList<Rio_Pelanggan> listOfCustomers = new ArrayList<Rio_Pelanggan>();
+	static ArrayList<Rio_Order> listOfOrders = new ArrayList<Rio_Order>();
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+	}
+
+}

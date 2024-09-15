@@ -1,0 +1,38 @@
+package uas_praktik_oop_i;
+
+import java.util.Date;
+
+public class Rio_TiketKonser extends Rio_Item{
+	private String namaArtis;
+	private Date tanggalKonser;
+	private String venue;
+	
+	public Rio_TiketKonser(String nama, float harga, String namaArtis,
+			Date tanggalKonser, String venue) {
+		super(nama, harga);
+		this.namaArtis = namaArtis;
+		this.tanggalKonser = tanggalKonser;
+		this.venue = venue;
+	}
+	
+	public String getDataTiket() {
+		return "Nama: " + getNama() + ", Harga: " + getHarga() + ", Stok: " + getStok();
+	}
+	
+	public int HitungJarakTanggalDenganHariIni() {
+		return 1;
+	}
+	
+	public String getNamaArtis() {
+		return namaArtis;
+	}
+
+	public Date getTanggalKonser() {
+		return tanggalKonser;
+	}
+
+	public String getVenue() {
+		return venue;
+	}
+	
+}

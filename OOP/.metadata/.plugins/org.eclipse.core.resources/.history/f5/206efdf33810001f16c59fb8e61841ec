@@ -1,0 +1,37 @@
+package Week12_Lec.Tugas;
+
+import java.io.*;
+
+public class CharacterApp {
+
+	public static void main(String[] args) {
+		try {
+			Character obj = new Character("Hero", 100, 10, 30, 40);
+			
+			File file = new File("sample.json");
+			if(file.createNewFile()) {
+				System.out.println("File berhasil dibuat");
+			} else {
+				System.out.println("File sudah ada");
+			}
+			System.out.println();
+			try {
+				file.setWritable(true);
+				FileWriter nulis = new FileWriter("sample.json");
+				nulis.write(obj.getData());
+				System.out.println("Berhasil menulis pada file 'sample.json'");
+				System.out.println();
+				try {
+					//  Lakukan read atau baca file JSON, dan tampilkan atau tuliskan pada console ecplise Anda
+				} catch(Exception ex) {
+					System.out.println(ex.getMessage());
+				}
+			} catch(Exception ex) {
+				System.out.println(ex.getMessage());
+			}
+		} catch(Exception ex) {
+			System.out.println(ex.getMessage());
+		}
+	}
+
+}

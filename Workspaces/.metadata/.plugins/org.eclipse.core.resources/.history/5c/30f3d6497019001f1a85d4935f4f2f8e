@@ -1,0 +1,14 @@
+package uas_praktik_oop_i;
+
+import java.util.Date;
+
+public class Rio_RekamanKonser extends Rio_Item{
+	private String namaArtis;
+	private Date tanggalKonser;
+	private String venue;
+	private String linkRekaman;
+	
+	public Rio_RekamanKonser(String nama, float harga, Date tanggalKonser, String venue, String linkRekaman) {
+		super(nama, harga);
+	}
+}

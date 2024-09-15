@@ -1,0 +1,16 @@
+1. Apa keuntungan menggunakan setter dan getter dalam Java?
+- Kontrol akses yang lebih baik terhadap atribut dan metode kelas.
+- Atribut kelas dapat dibuat hanya untuk dibaca / read-only (jika hanya menggunakan metode get), atau hanya untuk ditulis / write-only (jika hanya menggunakan metode set).
+- Kode menjadi lebih fleksibel, programmer dapat mengubah satu bagian kode tanpa memengaruhi bagian lainnya.
+- Meningkatkan keamanan data.
+
+2. Mengapa penting untuk mendeklarasikan atribut kelas sebagai private?
+Private adalah access modifier untuk attribute, method, dan constructor yang hanya dapat diakses dalam kelas yang dideklarasikan. Dengan mendeklarasikan atribut sebagai private, program dapat membatasi akses langsung ke atribut tersebut dari luar kelas. Hal ini mencegah kode lain untuk secara langsung mengubah atau mengakses nilai atribut tersebut. Konsep ini penting karena membantu dalam pengembangan aplikasi yang lebih terstruktur dan lebih mudah untuk dipelihara.
+
+3. Apa perbedaan antara setter dan getter dalam Java?
+- Setter adalah metode yang digunakan untuk menetapkan nilai dari suatu atribut dalam sebuah kelas, sedangkan Getter adalah metode yang digunakan untuk mengambil nilai dari suatu atribut dalam sebuah kelas.
+- Setter tidak mengembalikan nilai (void), karena fungsinya adalah untuk mengubah nilai atribut, sedangkan Getter mengembalikan nilai dari atribut sesuai dengan tipe data dari atribut tersebut.
+
+Sumber :
+https://www.w3schools.com/java/java_encapsulation.asp
+https://www.w3schools.com/java/ref_keyword_private.asp

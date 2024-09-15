@@ -1,0 +1,102 @@
+package uas_praktik_oop_i;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Rio_Main {
+	static ArrayList<Rio_Item> listOfItems = new ArrayList<Rio_Item>();
+	static ArrayList<Rio_Pelanggan> listOfCustomers = new ArrayList<Rio_Pelanggan>();
+	static ArrayList<Rio_Order> listOfOrders = new ArrayList<Rio_Order>();
+
+	public static void tambahItem(Rio_Item item) {
+		
+	}
+	
+	public static void tambahTiketKonser(Rio_TiketKonser tiketKonser) {
+		
+	}
+	
+	public static void tambahRekamanKonser(Rio_RekamanKonser rekamanKonser) {
+		
+	}
+	
+	public static void tambahPelanggan(Rio_Pelanggan pelanggan) {
+		
+	}
+	
+	public static void buatOrder(int customerId, int itemId, int qty) {
+		
+	}
+	
+	public static void cetakSemuaOrder() {
+		System.out.println("=================================================");
+		System.out.println("              Daftar Semua Pesanan               ");
+		System.out.println("=================================================");
+	}
+	
+	public static void lihatItem() {
+		System.out.println("=================================================");
+		System.out.println("             Menu Lihat Semua Barang             ");
+		System.out.println("=================================================");
+		if (listOfItems.size() == 0) {
+			System.out.println("Tidak ada barang yang terdaftar");
+			return;
+		}
+		for (int i = 0; i < listOfItems.size(); i++) {
+			Rio_Item item = listOfItems.get(i);
+			if (item instanceof Rio_TiketKonser) {
+				Rio_TiketKonser tiket = (Rio_TiketKonser) item;
+				System.out.println(tiket.getItemId() + ". Tiket Konser: " + tiket.getDataTiket());
+			}
+			else if (item instanceof Rio_Merchandise) {
+				Rio_Merchandise merchandise = (Rio_Merchandise) item;
+				System.out.println(merchandise.getItemId() + ". Merchandise: " + merchandise.getDataMerch());
+			}
+			else if (item instanceof Rio_RekamanKonser) {
+				Rio_RekamanKonser rekaman = (Rio_RekamanKonser) item;
+				System.out.println(rekaman.getItemId() + ". Rekaman Konser: " + rekaman.getDataRekaman());
+			}
+		}
+		System.out.println();
+	}
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		for(;;) {
+			System.out.println("=================================================");
+			System.out.println("            Menu Kasir Festival Musik            ");
+			System.out.println("=================================================");
+			System.out.println("1. Tambah Barang");
+			System.out.println("2. Lihat Semua Barang");
+			System.out.println("3. Daftar Pelanggan Baru");
+			System.out.println("4. Buat Pesanan");
+			System.out.println("5. Lihat Semua Pesanan");
+			System.out.println("6. Keluar");
+			System.out.println("=================================================");
+			System.out.print("Pilih Menu (1-6) : ");
+			int choice = input.nextInt();
+			switch (choice) {
+			case 1:
+				break;
+			case 2:
+				lihatItem();
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				System.out.println("Keluar program...");
+				input.close();
+			    System.exit(0);
+				break;
+			default:
+				System.out.println("Pilihan tidak valid. Silahkan pilih opsi yang sesuai.");
+				break;
+			}
+		}
+	}
+
+}

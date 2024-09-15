@@ -1,0 +1,34 @@
+Nama	: Rio Ferdinan
+NIM	: 00000070666
+
+1. Jelaskan multidimensional arrays dan berikan contoh.
+=
+Multidimensional array adalah struktur data yang terdiri dari dua atau lebih dimensi, di mana setiap dimensi dapat memiliki sejumlah elemen atau nilai.
+Contoh multidimensional array adalah matriks dua dimensi, yang terdiri dari baris dan kolom. Setiap elemen dalam matriks dapat diidentifikasi oleh indeks baris dan indeks kolom.
+int[][] matrix = {
+{1, 2, 3},
+{4, 5, 6},
+{7, 8, 9}
+};
+
+2. Sebutkan dan jelaskan 13 method-method string dalam Java.
+=
+1) length(): Method ini digunakan untuk mengembalikan panjang (jumlah karakter) dari string.
+2) charAt(int index): Method ini mengembalikan karakter pada posisi tertentu (dengan indeks) dalam string. Indeks dimulai dari 0.
+3) substring(int beginIndex): Method ini mengembalikan substring dari string, dimulai dari beginIndex hingga akhir string.
+4) substring(int beginIndex, int endIndex): Method ini mengembalikan substring dari string, dimulai dari beginIndex hingga sebelum endIndex.
+5) contains(CharSequence s): Method ini digunakan untuk memeriksa apakah suatu string mengandung serangkaian karakter atau substring tertentu.
+6) concat(String str): Method ini digunakan untuk menggabungkan (concatenate) string yang diberikan dengan string yang memanggil method ini.
+7) replace(CharSequence target, CharSequence replacement): Method ini digunakan untuk mengganti setiap kemunculan substring target dalam string dengan substring pengganti yang ditentukan.
+8) split(String regex): Method ini digunakan untuk memecah string menjadi array substring, dengan menggunakan string pemisah yang ditentukan oleh parameter regex.
+9) toLowerCase(): Method ini mengembalikan string dengan semua huruf kecil.
+10) toUpperCase(): Method ini mengembalikan string dengan semua huruf besar.
+11) trim(): Method ini mengembalikan string tanpa spasi di awal dan akhir.
+12) equals(Object anObject): Method ini digunakan untuk membandingkan string dengan objek lain. Mengembalikan true jika string sama dengan objek yang diberikan, dan false sebaliknya.
+13) indexOf(int ch): Method ini mengembalikan indeks dari karakter pertama dalam string. Jika karakter tidak ditemukan, mengembalikan -1.
+
+3. Sebutkan 2 keuntungan Immutability dalam Java.
+=
+1) Objek menjadi tidak dapat diubah (immutable) secara alami dan menjadi thread-safe, artinya objek tidak dapat diubah setelah pembuatannya dan tidak akan ada akses bersama (concurrent access) yang menyebabkan perubahan tidak terduga dalam objek tersebut sehingga lebih aman.
+
+2) Objek yang immutable menjadi lebih stabil karena perubahan pada satu objek tidak akan memengaruhi objek lain.

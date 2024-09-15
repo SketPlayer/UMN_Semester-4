@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;Week11_70666/src/exceptions&apos;&#x0D;&#x0A;- Original project: &apos;Week10_70666&apos;&#x0D;&#x0A;- Destination element: &apos;Week11_70666/src/exceptions&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     exceptions.AuthenticationException.java&#x0D;&#x0A;     exceptions.InvalidPropertyException.java&#x0D;&#x0A;     exceptions.ExcessiveFailedLoginException.java" description="Copy compilation units" destination="=Week11_70666/src&lt;exceptions" element1="/src&lt;exceptions{AuthenticationException.java" element2="/src&lt;exceptions{InvalidPropertyException.java" element3="/src&lt;exceptions{ExcessiveFailedLoginException.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1714903300494" units="3" version="1.0"/>
+</session>

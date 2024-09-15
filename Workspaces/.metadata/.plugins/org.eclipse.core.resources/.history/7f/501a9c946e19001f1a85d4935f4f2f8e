@@ -1,0 +1,13 @@
+package uas_praktik_oop_i;
+
+public abstract class Rio_Item {
+	private String itemId;
+	private String nama;
+	private float harga;
+	private int stok;
+	
+	public Rio_Item(String nama, float harga) {
+		this.nama = nama;
+		this.harga = harga;
+	}
+}

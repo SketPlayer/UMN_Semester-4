@@ -1,0 +1,26 @@
+package Week12_Lec.Tugas;
+
+import java.io.*;
+
+public class CharacterApp {
+
+	public static void main(String[] args) {
+		try {
+			Character obj = new Character("Hero", 100, 10, 30, 40);
+			
+			File file = new File("sample.json");
+			if(file.createNewFile()) {
+				System.out.println("File berhasil dibuat");
+			} else {
+				System.out.println("File sudah ada");
+			}
+			
+			file.setWritable(true);
+			FileWriter nulis = new FileWriter("sample.json");
+			nulis.write(obj.getData());
+		} catch(Exception ex) {
+			System.out.println(ex.getMessage());
+		}
+	}
+
+}
